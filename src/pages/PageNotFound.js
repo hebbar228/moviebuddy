@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import PNF from "../assets/images/pagenotfound.png"
 import { useEffect } from "react"
-import { useTitle } from "../hooks/useTitle"
+// import { useTitle } from "../hooks/useTitle"
 
 export const PageNotFound = () => {
-  // useEffect(() => {
-  //   document.title = `Page notFound / MovieBuddy`;
-  // })
-  useTitle('Page not Found');
-  
+  useEffect(() => {
+    document.title = `Page notFound / MovieBuddy`;
+  })
+  // useTitle('Page not Found');
+
   return (
     <main>
       <section className='flex flex-col justify-center px-2'>
